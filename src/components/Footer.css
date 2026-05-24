@@ -1,0 +1,24 @@
+.site-footer { padding: 28px 0; border-top: 1px solid rgba(11,97,255,0.05); background: transparent; }
+
+.footer-inner { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+
+.socials { display:flex; gap:10px; align-items:center }
+.social-link {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  color: #ffffff;
+  background: rgba(0,0,0,0.04);
+  border: none;
+  box-shadow: 0 6px 18px rgba(7,17,42,0.06);
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+.social-link svg { width:18px; height:18px; fill: currentColor; display:block; }
+.social-link:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(7,17,42,0.10); opacity:0.98 }
+
+.social-link.linkedin { background: #0077B5; }
+.social-link.whatsapp { background: #25D366; }
+.social-link.facebook { background: #1877F2; }

@@ -1,0 +1,19 @@
+.services {
+  padding: 56px 0;
+}
+
+.services h2 { color: var(--navy); }
+
+.grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(7,17,42,0.04);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(7,17,42,0.06); }
+
+.card .icon { width: 44px; height:44px; display:flex; align-items:center; justify-content:center; border-radius:10px; background:linear-gradient(180deg, rgba(11,97,255,0.06), rgba(0,170,255,0.02)); color:var(--primary); font-weight:700; margin-bottom:12px; }

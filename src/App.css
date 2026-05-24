@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+:root {
+  --navy: #07112a;
+  --primary: #0b61ff;
+  --accent: #00aaff;
+  --muted: #6b7280;
+  --bg: #f7fbff;
+  --card-bg: #ffffff;
+  --container: 1100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Prevent overflow issues */
+* { box-sizing: border-box; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.site-root {
+  color: var(--navy);
+  background: var(--bg);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container {
+  width: 92%;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+/* Shared button utility used across components */
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.button.primary {
+  background: linear-gradient(90deg,var(--primary),var(--accent));
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width:480px) {
+  .container { width:94% }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

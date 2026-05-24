@@ -1,0 +1,40 @@
+.hero {
+  padding: 96px 0 84px;
+  position:relative;
+  overflow:visible;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 36px;
+  align-items: center;
+}
+
+.hero-inner > div { animation: fadeInUp .6s ease both }
+@keyframes fadeInUp { from { opacity:0; transform: translateY(8px) } to { opacity:1; transform: translateY(0) } }
+
+.hero h1 {
+  margin: 0 0 14px 0;
+  color: var(--navy);
+  font-size: 44px;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.hero .lead {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.hero-visual .mockup {
+  height: 300px;
+  background: linear-gradient(180deg, rgba(11,97,255,0.12), rgba(0,170,255,0.06));
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(7,17,42,0.07);
+  border: 1px solid rgba(11,97,255,0.03);
+}
+
+@media (max-width:480px) {
+  .hero h1 { font-size:28px }
+}

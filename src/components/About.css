@@ -1,0 +1,28 @@
+.about { padding: 80px 0; background: linear-gradient(180deg, rgba(11,97,255,0.01), rgba(0,170,255,0.005)); }
+
+.about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+
+.about-text h2 { color: var(--navy); margin-bottom: 20px; font-size: 32px; }
+
+.about-lead { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
+
+.about-highlights { display: flex; flex-direction: column; gap: 24px; }
+
+.highlight-item { display: flex; gap: 16px; align-items: flex-start; }
+
+.highlight-icon { font-size: 28px; flex-shrink: 0; }
+.highlight-icon svg { width: 34px; height: 34px; display:block; color: var(--primary); }
+
+.highlight-item h4 { color: var(--navy); margin: 0 0 8px 0; font-size: 16px; font-weight: 600; }
+
+.highlight-item p { color: var(--muted); margin: 0; font-size: 14px; line-height: 1.6; }
+
+.services-grid { display: flex; flex-direction: column; gap: 18px; }
+
+.service-card { display: flex; gap: 16px; align-items: flex-start; background: linear-gradient(180deg,#fff,#fbfdff); padding: 18px; border-radius: 14px; box-shadow: 0 12px 30px rgba(7,17,42,0.04); border: 1px solid rgba(11,97,255,0.06); }
+
+.service-icon { font-size: 26px; width: 64px; height: 64px; display:flex; align-items:center; justify-content:center; border-radius:10px; background: transparent; flex-shrink:0; color: var(--primary); }
+.service-icon svg { width: 36px; height: 36px; display:block; }
+
+.service-body h4 { margin: 0 0 6px 0; color: var(--navy); font-size: 16px; }
+.service-body p { margin:0; color: var(--muted); font-size: 14px; line-height:1.6; }

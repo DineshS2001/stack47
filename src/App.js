@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import About from './components/About';
+import Careers from './components/Careers';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+function getPageFromPathname() {
+  return window.location.pathname.replace(/\/+$/, '') === '/careers' ? 'careers' : 'home';
+}
+
+// routing helpers are implemented inside Nav component; App only manages page state
 
 function App() {
+  const [page, setPage] = useState(getPageFromPathname());
+
+  useEffect(() => {
+    const handlePopState = () => setPage(getPageFromPathname());
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-root">
+      <Nav page={page} />
+      {page === 'home' ? (
+        <main>
+          <Hero />
+          <Services />
+          <About />
+          <Contact />
+        </main>
+      ) : (
+        <main>
+          <Careers />
+        </main>
+      )}
+      <Footer />
     </div>
   );
 }
