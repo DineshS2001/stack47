@@ -41,17 +41,18 @@ export default function Nav({ page }) {
           {page === 'home' ? (
             <>
               <a href="#home">Home</a>
-              <a href="#about">About</a>
               <a href="#services">Services</a>
+              <a href="#about">About</a>
               <a href="/careers" onClick={go('/careers')}>Careers</a>
               <a href="#contact" className="cta">Contact Us</a>
             </>
           ) : (
             <>
               <a href="/" onClick={go('/')}>Home</a>
-              <a href="/#about" onClick={go('/#about')}>About</a>
               <a href="/#services" onClick={go('/#services')}>Services</a>
-              <a href="#contact" className="cta">Contact Us</a>
+              <a href="/#about" onClick={go('/#about')}>About</a>
+              <a href="/careers" onClick={go('/careers')}>Careers</a>
+              <a href="/#contact" onClick={go('/#contact')} className="cta">Contact Us</a>
             </>
           )}
         </nav>
@@ -61,5 +62,5 @@ export default function Nav({ page }) {
 }
 
 Nav.propTypes = {
-  page: PropTypes.oneOf(['home', 'careers']),
+  page: PropTypes.oneOf(['home', 'careers', 'internships', 'jobs']),
 };

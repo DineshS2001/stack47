@@ -52,8 +52,10 @@ export default function Services() {
           {items.map((s) => (
             <article key={s.title} className="card">
               <div className="icon">{s.icon}</div>
-              <h3>{s.title}</h3>
-              <p>{s.desc}</p>
+              <div className="card-body">
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
+              </div>
             </article>
           ))}
         </div>

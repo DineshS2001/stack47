@@ -11,6 +11,14 @@
 /* Prevent overflow issues */
 * { box-sizing: border-box; }
 
+img, svg, video, canvas {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .site-root {
   color: var(--navy);
   background: var(--bg);
@@ -39,6 +47,11 @@
 }
 
 @media (max-width:480px) {
-  .container { width:94% }
+  .container { width:90% }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
 }
 

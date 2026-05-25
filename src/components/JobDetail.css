@@ -1,0 +1,5 @@
+.job-detail-section { padding: 36px 0 80px; }
+.job-detail-card { background: linear-gradient(180deg,#fff,#fbfdff); border:1px solid rgba(11,97,255,0.06); padding:24px; border-radius:12px; box-shadow:0 12px 30px rgba(7,17,42,0.04); }
+.job-detail-card h2 { margin-top:0; }
+.job-detail-card p { color: var(--muted); line-height:1.6; }
+@media (max-width:640px){ .job-detail-section{padding:24px 0 60px} .job-detail-card{padding:18px}}

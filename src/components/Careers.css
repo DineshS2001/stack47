@@ -1,3 +1,19 @@
+.careers-hero {
+  padding: 52px 0 36px;
+  background: linear-gradient(180deg, rgba(11,97,255,0.08), rgba(11,97,255,0.02));
+}
+
+.careers-hero-inner h1 {
+  margin: 0 0 10px;
+  color: var(--navy);
+}
+
+.careers-hero-inner .lead {
+  margin: 0;
+  color: var(--muted);
+  max-width: 780px;
+}
+
 .internship { padding: 64px 0; background: linear-gradient(180deg, rgba(11,97,255,0.01), transparent); }
 
 .internship h2 { color: var(--navy); margin-bottom: 12px; }
@@ -42,4 +58,55 @@
 @media (max-width: 1000px) {
   .internship-layout { grid-template-columns: 1fr; gap: 32px; }
   .tracks-grid { grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); }
+}
+
+@media (max-width: 640px) {
+  .careers-hero { padding: 44px 0 30px; }
+  .internship { padding: 48px 0; }
+  .pricing-card { padding: 22px; }
+  .app-form-inline .form-row { grid-template-columns: 1fr; }
+  .app-form-inline input, .app-form-inline select, .app-form-inline textarea { font-size: 16px; }
+  .tracks-grid { grid-template-columns: 1fr; gap: 12px; }
+  .track-card {
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+    border-left: 4px solid var(--track-color);
+    background: linear-gradient(180deg, #fff, #fbfdff);
+    box-shadow: 0 12px 30px rgba(7,17,42,0.06);
+    border: 1px solid rgba(11,97,255,0.04);
+  }
+  .track-card::before { display: none; }
+  .track-icon {
+    width: 54px;
+    height: 54px;
+    margin: 0;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: transparent;
+    color: var(--track-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .track-card:hover .track-icon {
+    transform: scale(1.04);
+    background: transparent;
+  }
+  .track-card h4 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .pricing-card .button { width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .tracks-grid { grid-template-columns: 1fr; gap: 10px; }
+  .track-card {
+    padding: 15px 16px;
+    border-radius: 18px;
+  }
+  .pricing-meta { gap: 10px; }
 }
