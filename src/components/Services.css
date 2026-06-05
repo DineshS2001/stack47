@@ -13,19 +13,24 @@
 .card h3 {
   margin: 0 0 8px 0;
   color: var(--navy);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .card p {
   margin: 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
 }
 
-.grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+.grid {
+  display: grid;
+  gap: 18px;
+  /* Force a 2x2 layout for four service cards on wider screens */
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+}
 
 .card {
   background: var(--card-bg);

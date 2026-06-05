@@ -8,75 +8,39 @@ export default function About() {
       <div className="container about-inner">
         <div className="about-text">
           <h2>About Stack47</h2>
-          <p className="about-lead">We create reliable, scalable software for startups and enterprises. Our approach prioritizes measurable outcomes, clean code, and collaborative partnerships.</p>
-          <div className="about-highlights">
-            <div className="highlight-item">
-              <div className="highlight-icon" aria-hidden>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="9" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M12 7v5l3 2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M21 3l-6 6" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <div>
-                <h4>Mission</h4>
-                <p>Help teams ship high-quality products faster.</p>
-              </div>
+          <h3>Engineering Digital Solutions That Drive Business Growth</h3>
+          <p className="about-lead">Stack47 is a software-driven solutions company focused on building reliable, scalable, 
+            and high-performance digital systems for modern businesses. We specialize in transforming complex requirements into structured, efficient, and user-focused software products.</p>
+          <p className="about-lead">Our approach combines technical expertise with clear execution strategies, enabling organizations to streamline operations, enhance digital presence, and adapt to evolving technological demands.</p>
+        </div>
+
+        <div className="about-highlights">
+          <div className="highlight-item">
+            <div className="highlight-icon" aria-hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M12 7v5l3 2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M21 3l-6 6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </div>
-            <div className="highlight-item">
-              <div className="highlight-icon" aria-hidden>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 2L3 14h7l-1 8L21 10h-7l-1-8z" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <div>
-                <h4>Principles</h4>
-                <p>Clarity, ownership, continuous improvement.</p>
-              </div>
+            <div>
+              <h4>Our Focus</h4>
+              <p>At Stack47, we prioritize on building scalable, reliable, and high-performance digital systems. We combine engineering precision with structured development practices to deliver clean, maintainable solutions, with a strong emphasis on transparency, quality, and long-term reliability.</p>
+            </div>
+          </div>
+          <div className="highlight-item">
+            <div className="highlight-icon" aria-hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 2L3 14h7l-1 8L21 10h-7l-1-8z" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <div>
+              <h4>Our Vision</h4>
+              <p>To become a trusted technology partner for businesses by delivering software solutions that are not only functional, but strategically aligned with growth and innovation.</p>
             </div>
           </div>
         </div>
-        <div className="services-grid">
-          <div className="service-card">
-            <div className="service-icon" aria-hidden>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 9L4 12l4 3" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M16 9l4 3-4 3" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <div className="service-body">
-              <h4>Custom Development</h4>
-              <p>End-to-end custom software development — we build features and platforms that match your business, not a specific language.</p>
-            </div>
-          </div>
 
-          <div className="service-card">
-            <div className="service-icon" aria-hidden>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="4" width="14" height="12" rx="2" strokeLinecap="round" strokeLinejoin="round" />
-                <rect x="18" y="6" width="4" height="8" rx="1" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <div className="service-body">
-              <h4>Web & Mobile Apps</h4>
-              <p>Responsive web apps and native/hybrid mobile applications — from prototypes to production-ready products.</p>
-            </div>
-          </div>
-
-          <div className="service-card">
-            <div className="service-icon" aria-hidden>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 6h15l-3 9H9L6 6z" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="10.5" cy="18.5" r="1.2" />
-                <circle cx="18.5" cy="18.5" r="1.2" />
-              </svg>
-            </div>
-            <div className="service-body">
-              <h4>POS Systems</h4>
-              <p>Custom point-of-sale solutions tailored for retail and hospitality — reliable, secure, and easy to use.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

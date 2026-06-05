@@ -10,6 +10,7 @@ import Jobs from './components/Jobs';
 import JobDetail from './components/JobDetail';
 import ApplicationPage from './components/ApplicationPage';
 import Contact from './components/Contact';
+import DeliveryCommitment from './components/DeliveryCommitment';
 import Footer from './components/Footer';
 
 function getPageFromPathname() {
@@ -56,6 +57,7 @@ function App() {
         <main>
           <Hero />
           <Services />
+          <DeliveryCommitment />
           <About />
           <Contact />
         </main>

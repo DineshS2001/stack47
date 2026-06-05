@@ -7,6 +7,8 @@
 .about-lead { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
 
 .about-highlights { display: flex; flex-direction: column; gap: 24px; }
+/* align highlights with the H3 heading on the left column */
+.about-highlights { margin-top: 80px; }
 
 .highlight-item { display: flex; gap: 16px; align-items: flex-start; }
 
@@ -32,6 +34,9 @@
 		grid-template-columns: 1fr;
 		gap: 28px;
 	}
+
+	/* remove right-column offset on stacked layout */
+	.about-highlights { margin-top: 0; }
 
 	.about {
 		padding: 64px 0;
